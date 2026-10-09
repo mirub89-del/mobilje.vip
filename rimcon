@@ -1,0 +1,9 @@
+<section style="padding:40px 20px; background:#FFFBF5;">
+  <h2 style="text-align:center; font-size:32px;">Provo Shija AI 🍲</h2>
+  <p style="text-align:center;">Shkruaj çka ke ne shpi dhe merr receten</p>
+  
+  <iframe 
+    src="https://mobilje.vip/shija.html" 
+    style="width:100%; max-width:1100px; height:800px; border:1px solid #EADDD0; border-radius:20px; display:block; margin:20px auto;">
+  </iframe>
+</section>
