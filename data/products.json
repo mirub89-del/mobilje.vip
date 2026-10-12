@@ -1,0 +1,81 @@
+[
+  {
+    "id": "hairpin-28-black",
+    "title": "Këmbë Tavoline Hairpin 71cm - 2 Copë",
+    "title_en": "Hairpin Table Legs 28 inch - 2pcs",
+    "price_usd": 39,
+    "price_eur": 36,
+    "image": "/images/products/hairpin-black.jpg",
+    "supplier": "zendrop",
+    "shipping_from": ["EU", "US"],
+    "delivery_days": "3-7",
+    "aliexpress_url": "https://www.aliexpress.com/item/100500...hairpin",
+    "category": "table-legs",
+    "in_stock": true
+  },
+  {
+    "id": "trapezoid-legs-40",
+    "title": "Këmbë Trapez për Tavolinë - 2 Copë",
+    "title_en": "Trapezoid Metal Table Legs - 2pcs",
+    "price_usd": 59,
+    "price_eur": 54,
+    "image": "/images/products/trapezoid.jpg",
+    "supplier": "cj-dropshipping",
+    "shipping_from": ["EU", "US"],
+    "delivery_days": "3-7",
+    "category": "table-legs",
+    "in_stock": true
+  },
+  {
+    "id": "soft-close-hinges-10",
+    "title": "Mentesha Soft-Close 10 Copë",
+    "title_en": "Soft-Close Cabinet Hinges 10pcs",
+    "price_usd": 19,
+    "price_eur": 18,
+    "image": "/images/products/hinges.jpg",
+    "supplier": "zendrop",
+    "shipping_from": ["EU"],
+    "delivery_days": "2-5",
+    "category": "hardware",
+    "in_stock": true
+  },
+  {
+    "id": "industrial-casters-4",
+    "title": "Rrota Industriale me Fren - 4 Copë",
+    "title_en": "Industrial Casters with Brake - 4pcs",
+    "price_usd": 24,
+    "price_eur": 22,
+    "image": "/images/products/casters.jpg",
+    "supplier": "zendrop",
+    "shipping_from": ["EU", "US"],
+    "delivery_days": "3-7",
+    "category": "hardware",
+    "in_stock": true
+  },
+  {
+    "id": "kreg-jig-kit",
+    "title": "Set për Vrima Xhepi - Kreg Style",
+    "title_en": "Pocket Hole Jig Kit",
+    "price_usd": 49,
+    "price_eur": 45,
+    "image": "/images/products/kreg-jig.jpg",
+    "supplier": "cj-dropshipping",
+    "shipping_from": ["US", "EU"],
+    "delivery_days": "4-8",
+    "category": "tools",
+    "in_stock": true
+  },
+  {
+    "id": "led-profile-1m",
+    "title": "Profil Alumini për LED 1m me Kapak",
+    "title_en": "LED Aluminum Profile Channel 1m",
+    "price_usd": 15,
+    "price_eur": 14,
+    "image": "/images/products/led-profile.jpg",
+    "supplier": "zendrop",
+    "shipping_from": ["EU"],
+    "delivery_days": "2-5",
+    "category": "lighting",
+    "in_stock": true
+  }
+]
