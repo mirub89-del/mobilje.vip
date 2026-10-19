@@ -1,323 +1,150 @@
-
-
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Mobilje.vip | Furniture Plans</title>
-
-  <meta name="description" content="Discover furniture plans, technical drawings, dimensions and DIY metal furniture projects.">
-
-  <meta name="robots" content="index, follow">
-
-  <style>
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body { font-family: Arial, sans-serif; color: #222; background: #f7f7f5; line-height: 1.7; }
-
-    header { background: #151515; color: white; padding: 22px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
-
-    .logo { font-size: 27px; font-weight: bold; }
-
-    .logo span { color: #d7a644; }
-
-    nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
-
-    .hero { text-align: center; padding: 85px 20px; background: #eae7df; }
-
-    .hero small { letter-spacing: 3px; color: #666; }
-
-    h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.15; margin: 20px auto; max-width: 850px; }
-
-    .hero p { max-width: 650px; margin: 0 auto 28px; color: #555; }
-
-    .button { display: inline-block; background: #171717; color: white; padding: 13px 24px; text-decoration: none; border-radius: 4px; }
-
-    main { max-width: 1150px; margin: auto; padding: 55px 22px; }
-
-    h2 { font-size: 30px; margin-bottom: 8px; }
-
-    .intro { color: #666; margin-bottom: 28px; }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
-
-    .card { background: white; border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; }
-
-    .drawing { height: 190px; background: #efede7; display: grid; place-items: center; padding: 20px; }
-
-    .drawing svg { width: 100%; height: 100%; }
-
-    .card-content { padding: 22px; }
-
-    h3 { margin-bottom: 8px; }
-
-    .card p { color: #666; font-size: 14px; margin-bottom: 12px; }
-
-    .label { display: inline-block; color: #88651e; font-size: 12px; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; }
-
-    .about { background: white; padding: 28px; margin-top: 45px; border-radius: 8px; }
-
-    .about p { color: #555; }
-
-    footer { background: #151515; color: #ddd; padding: 30px 20px; text-align: center; font-size: 13px; }
-
-    footer a { color: #e0bb70; margin: 0 8px; }
-
-    @media(max-width: 600px) { header { justify-content: center; } nav { text-align: center; } nav a { margin: 0 7px; } .hero { padding: 60px 18px; } }
-
-  </style>
-
+<html lang="sq"><head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>concept furniture</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  font-family:'Inter',sans-serif;
+  background: linear-gradient(135deg, #0a5cc2 0%, #063a8a 50%, #001e4a 100%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.card{
+  background:#fff;
+  width:100%;
+  max-width:390px;
+  border-radius:24px;
+  padding:42px 32px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+  text-align:center;
+  animation:fadeIn .6s ease;
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.label{font-size:11px;letter-spacing:2.5px;color:#0a4da1;font-weight:700;margin-bottom:14px}
+h1{font-size:18px;font-weight:600;color:#1a1a1a;line-height:1.5;margin-bottom:28px}
+input{width:100%;padding:16px 20px;font-size:22px;letter-spacing:6px;text-align:center;border:2px solid #e5e7eb;border-radius:12px;outline:none;transition:.2s;font-weight:600}
+input:focus{border-color:#0a4da1;box-shadow:0 0 0 4px rgba(10,92,194,.12)}
+input.error{border-color:#ef4444;animation:shake .4s}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+.btn{width:100%;padding:16px;background:#0a4da1;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:.2s;margin-top:18px}
+.btn:hover{background:#083e8a;transform:translateY(-1px)}
+#errorMsg{color:#ef4444;font-size:13px;margin-top:12px;display:none;font-weight:500}
+.footer{position:fixed;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,.85);font-size:13px}
+.footer a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.footer a:hover{color:#a3c6ff}
+</style>
 </head>
-
 <body>
-
-<header>
-
-  <div class="logo">Mobilje<span>.vip</span></div>
-
-  <nav>
-
-    <a href="#home">Home</a>
-
-    <a href="#plans">Furniture Plans</a>
-
-    <a href="#about">About</a>
-
-    <a href="#contact">Contact</a>
-
-  </nav>
-
-</header>
-
-<section class="hero" id="home">
-
-  <small>DESIGN • PLAN • BUILD</small>
-
-  <h1>Furniture Plans & Technical Drawings</h1>
-
-  <p>
-
-    Explore furniture design ideas, technical drawings and practical
-
-    workshop projects. Discover inspiration for metal furniture,
-
-    bed frames, tables and storage solutions.
-
-  </p>
-
-  <a class="button" href="#plans">Explore Projects</a>
-
-</section>
-
-<main>
-
-  <section id="plans">
-
-    <h2>Explore Furniture Plans</h2>
-
-    <p class="intro">
-
-      Discover furniture categories and get inspired for your next project.
-
-      Detailed project plans will be published here.
-
-    </p>
-
-    <div class="grid">
-
-      <article class="card">
-
-        <div class="drawing">
-
-          <svg viewBox="0 0 260 150" fill="none" stroke="#333" stroke-width="2">
-
-            <path d="M35 65 L225 65 L225 105 L35 105 Z"/>
-
-            <path d="M35 65 L55 45 L245 45 L225 65"/>
-
-            <path d="M55 45 L55 85 M245 45 L245 85"/>
-
-            <path d="M45 105 L45 135 M215 105 L215 135"/>
-
-            <path d="M25 140 H235 M25 136 V144 M235 136 V144"/>
-
-            <text x="130" y="132" text-anchor="middle" fill="#333" stroke="none" font-size="10">DIMENSIONS</text>
-
-          </svg>
-
-        </div>
-
-        <div class="card-content">
-
-          <span class="label">Category 01</span>
-
-          <h3>Metal Table Plans</h3>
-
-          <p>Ideas for metal table frames, workshop tables and modern furniture.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <div class="drawing">
-
-          <svg viewBox="0 0 260 150" fill="none" stroke="#333" stroke-width="2">
-
-            <path d="M40 45 H220 V105 H40 Z"/>
-
-            <path d="M40 45 L55 30 H235 L220 45"/>
-
-            <path d="M55 30 V90 M235 30 V90"/>
-
-            <path d="M50 105 V135 M210 105 V135"/>
-
-            <path d="M25 140 H235 M25 136 V144 M235 136 V144"/>
-
-            <text x="130" y="125" text-anchor="middle" fill="#333" stroke="none" font-size="10">BED FRAME</text>
-
-          </svg>
-
-        </div>
-
-        <div class="card-content">
-
-          <span class="label">Category 02</span>
-
-          <h3>Bed Frame Plans</h3>
-
-          <p>Design ideas for metal beds, modern frames and bedroom furniture.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <div class="drawing">
-
-          <svg viewBox="0 0 260 150" fill="none" stroke="#333" stroke-width="2">
-
-            <path d="M55 25 H205 V130 H55 Z"/>
-
-            <path d="M55 60 H205 M55 95 H205"/>
-
-            <path d="M65 25 V130 M195 25 V130"/>
-
-            <path d="M40 135 H220 M40 131 V139 M220 131 V139"/>
-
-            <text x="130" y="15" text-anchor="middle" fill="#333" stroke="none" font-size="10">SHELVING UNIT</text>
-
-          </svg>
-
-        </div>
-
-        <div class="card-content">
-
-          <span class="label">Category 03</span>
-
-          <h3>Shelves & Storage</h3>
-
-          <p>Ideas for storage systems, industrial shelves and display units.</p>
-
-        </div>
-
-      </article>
-
-      <article class="card">
-
-        <div class="drawing">
-
-          <svg viewBox="0 0 260 150" fill="none" stroke="#333" stroke-width="2">
-
-            <path d="M40 35 H220 V115 H40 Z"/>
-
-            <path d="M40 35 L55 20 H235 L220 35"/>
-
-            <path d="M55 20 V100 M235 20 V100"/>
-
-            <path d="M40 75 H220 M130 35 V115"/>
-
-            <text x="130" y="140" text-anchor="middle" fill="#333" stroke="none" font-size="10">CUSTOM DESIGN</text>
-
-          </svg>
-
-        </div>
-
-        <div class="card-content">
-
-          <span class="label">Category 04</span>
-
-          <h3>Custom Furniture</h3>
-
-          <p>Creative furniture concepts for DIY makers and metalworking shops.</p>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-  <section class="about" id="about">
-
-    <h2>About Mobilje.vip</h2>
-
-    <p>
-
-      Mobilje.vip is being developed as a resource for furniture design,
-
-      technical drawings and practical workshop projects. Our goal is to
-
-      help DIY enthusiasts, furniture makers and metalworkers explore
-
-      designs and learn about materials, dimensions and construction.
-
-    </p>
-
-  </section>
-
-  <section class="about" id="contact">
-
-    <h2>Contact</h2>
-
-    <p>
-
-      For questions about our furniture projects, please contact the
-
-      Mobilje.vip website administrator.
-
-    </p>
-
-    <p>Contact email: replace-with-your-email@example.com</p>
-
-  </section>
-
-</main>
-
-<footer>
-
-  <p>© 2026 Mobilje.vip. All rights reserved.</p>
-
-  <p style="margin-top:10px">
-
-    <a href="#about">About Us</a>
-
-    <a href="#contact">Contact</a>
-
-  </p>
-
-</footer>
-
-</body>
-
-</html>
+<div class="card">
+  <div class="label">concept furniture</div>
+  <h1>Qasje e kufizuar. Vetëm klientët me kod ftesë mund të kenë qasje.</h1>
+ <!-- CHATBOT FALAS per mobilje.vip -->
+<div id="chat-vip" style="max-width:400px;margin:20px auto;font-family:sans-serif;">
+  <div id="chat-messages" style="height:300px;overflow-y:auto;border:1px solid #ddd;padding:10px;border-radius:10px;background:#f9f9f9;"></div>
+  <div style="display:flex;margin-top:10px;gap:10px;">
+    <input id="chat-input" type="text" placeholder="Shkruaj: Po kërkoj dhomë gjumi..." style="flex:1;padding:12px;border-radius:20px;border:1px solid #ccc;">
+    <button onclick="dergoMesazh()" style="padding:12px 20px;border-radius:20px;border:none;background:#204d9a;color:white;cursor:pointer;">DERGO</button>
+  </div>
+</div>
+
+<script>
+const messages = document.getElementById('chat-messages');
+function shtoMesazh(teksti, kush) {
+  const div = document.createElement('div');
+  div.style.margin = '8px 0';
+  div.style.textAlign = kush==='ti' ? 'right' : 'left';
+  div.innerHTML = `<span style="display:inline-block;padding:8px 12px;border-radius:15px;background:${kush==='ti' ? '#204d9a;color:white' : 'white;border:1px solid #eee'}">${teksti}</span>`;
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+}
+function dergoMesazh() {
+  const input = document.getElementById('chat-input');
+  if(!input.value) return;
+  shtoMesazh(input.value, 'ti');
+  let pergjigja = "Faleminderit! Jam asistenti i Mobilje Vip. Per momentin jam ne versionin FALAS - me thuaj cka po kerkoni (kuzhine, dhome gjumi, korridor) dhe te dergoj ne 【entity-WhatsApp¦canonical_name=WhatsApp】 te pronarit.";
+  // ketu me vone e lidhim me ChatGPT API
+  if(input.value.toLowerCase().includes('kuzhine')) pergjigja = "Kuzhinat i kemi koncept - me porosi. Me jep numrin dhe te dergoj katalogun ne Viber/【entity-WhatsApp¦canonical_name=WhatsApp】.";
+  if(input.value.toLowerCase().includes('dhom')) pergjigja = "Dhomat e gjumit i kemi nga 600€ lart. Cili stil te pelqen me shume - modern apo klasik?";
+  setTimeout(()=>shtoMesazh(pergjigja, 'ai'), 500);
+  input.value='';
+}
+shtoMesazh("Përshëndetje! 👋 Jam asistenti i Concept Furniture. Si mund t'ju ndihmoj?", 'ai');
+</script>
+  <p id="errorMsg">Kodi i gabuar! Provoni përsëri.</p>
+</div>
+
+<div class="footer">allrightreserved © 2018 <a href="https://www.facebook.com/slburim" target="_blank" rel="noopener">Burim Selmani</a></div>
+
+<script>
+const VALID_CODE = "rimcode";
+const DEST_URL = "https://mobilje.vip/shija.html";
+const input = document.getElementById('inviteInput');
+const btn = document.getElementById('connectBtn');
+const error = document.getElementById('errorMsg');
+
+function checkCode(){
+  const val = input.value.trim();
+  if(val === VALID_CODE){
+    error.style.display='none';
+    btn.textContent='✓ QASJA U LEJUA';
+    btn.style.background='#10b981';
+    input.style.borderColor='#10b981';
+    setTimeout(()=>{ window.location.href = DEST_URL; }, 700);
+  } else {
+    error.style.display='block';
+    input.classList.add('error');
+    input.value='';
+    input.focus();
+    setTimeout(()=>input.classList.remove('error'),400);
+  }
+}
+btn.addEventListener('click', checkCode);
+input.addEventListener('keydown', e=>{ if(e.key==='Enter') checkCode(); });
+input.addEventListener('input', ()=>{ error.style.display='none'; });
+
+// Footer link - burim selmani -> profile
+document.addEventListener('DOMContentLoaded', ()=>{
+  const el = document.getElementById('footerName');
+  const d = "facebook.com";
+  const u = "slburim";
+  const p = "https://www.";
+  const url = p + d + "/" + u;
+  const a = document.createElement('a');
+  a.textContent = 'Burim Selmani';
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  el.replaceWith(a);
+});
+input.focus();
+</script>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script>
+
+</body></html>
