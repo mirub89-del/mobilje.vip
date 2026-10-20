@@ -73,6 +73,51 @@ input.error{border-color:#ef4444;animation:shake .4s}
   <p id="errorMsg">Kodi i gabuar! Provoni përsëri.</p>
 </div>
 
+<!-- 2 BUTONAT PARALEL - 【entity-INSTAGRAM¦canonical_name=Instagram】 & TIKTOK -->
+<div class="social-row">
+  <a class="social-btn 【entity-instagram¦canonical_name=Instagram】" href="https://instagram.com/mobilje.vip" target="_blank">
+    【entity-Instagram¦canonical_name=Instagram】
+  </a>
+  <a class="social-btn tiktok" href="https://www.tiktok.com/@mobilje.vip" target="_blank">
+    TikTok
+  </a>
+</div>
+
+<style>
+.social-row{
+  display:flex;
+  gap:12px;
+  width:100%;
+  max-width:380px;
+  margin-top:22px;
+}
+.social-btn{
+  flex:1;
+  height:52px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:700;
+  text-decoration:none;
+  border:1.5px solid rgba(255,255,255,0.9);
+  transition:0.2s;
+}
+.social-btn.【entity-instagram¦canonical_name=Instagram】{
+  background:#ffffff;
+  color:#0f4aa3;
+}
+.social-btn.tiktok{
+  background: rgba(255,255,255,0.12);
+  color:#fff;
+  backdrop-filter: blur(10px);
+}
+.social-btn:hover{transform:translateY(-2px);}
+</style>
+
+
 <div class="footer">allrightreserved © 2018 <a href="https://www.facebook.com/slburim" target="_blank" rel="noopener">Burim Selmani</a></div>
 
 <script>
