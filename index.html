@@ -67,9 +67,9 @@ input.error{border-color:#ef4444;animation:shake .4s}
 <body>
 <div class="card">
   <div class="label">concept furniture</div>
-  <h1>only invite client.</h1>
+  <h1>Access restricted to invited clients only.</h1>
   <input type="password" id="inviteInput" placeholder="•invite code•" maxlength="10" autocomplete="off">
-  <button class="btn" id="connectBtn">connection</button>
+  <button class="btn" id="connectBtn">CONNECT</button>
   <p id="errorMsg">error code, try again.</p>
 </div>
 
@@ -130,7 +130,7 @@ function checkCode(){
   const val = input.value.trim();
   if(val === VALID_CODE){
     error.style.display='none';
-    btn.textContent='✓ QASJA U LEJUA';
+    btn.textContent='✓ conection';
     btn.style.background='#10b981';
     input.style.borderColor='#10b981';
     setTimeout(()=>{ window.location.href = DEST_URL; }, 700);
